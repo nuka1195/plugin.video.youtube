@@ -1,0 +1,4 @@
+#LWP-Cookies-2.0
+Set-Cookie3: LOGIN_INFO=987a02799eda7b76f44015114880dd4fc2cAAAB7IjEiOiAxLCAiMyI6IDE0MDg3NTYyNiwgIjIiOiAiMTBNdEpGVlZGWXFmREVfSXdPUGRZZz09IiwgIjQiOiAiUEFTU1dPUkQiLCAiNyI6IDEyNjkwMzY3NDgsICI2IjogZmFsc2V9; path="/"; domain=".youtube.com"; path_spec; domain_dot; expires="2020-03-16 22:12:28Z"; httponly=None; version=0
+Set-Cookie3: PREF="f1=50000000"; path="/"; domain=".youtube.com"; path_spec; domain_dot; expires="2019-06-12 14:19:28Z"; version=0
+Set-Cookie3: VISITOR_INFO1_LIVE=bX2Hr5ctk_0; path="/"; domain=".youtube.com"; path_spec; domain_dot; expires="2010-10-22 01:12:32Z"; version=0

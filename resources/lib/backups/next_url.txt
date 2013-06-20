@@ -1,0 +1,24 @@
+            """
+            # we only need the redirect url
+            next_url = opener.geturl()
+            # if this is an +18 video post redirect
+            if ( "next_url=" in next_url ):
+                # read source for session token
+                htmlSource = opener.read()
+                # close opener
+                opener.close()
+                # get session token
+                session_token = re.findall( "'session_token=(.+?)'", htmlSource )[ 0 ]
+                # we only need the /watch... portion
+                post_url = unquote_plus( re.findall( "next_url=(.+)", next_url )[ 0 ] )
+                # we need to request the url to be redirected to the swf player url to grab the session id
+                post_form = { "session_token": session_token, "next_url": post_url, "action_confirm": "Confirm Birth Date" }
+                # we need to request the url to be redirected to post the confirmation
+                request = urllib2.Request( next_url, urlencode( post_form ) )
+                # add a faked header, we use ie 8.0. it gives correct results for regex
+                request.add_header( 'User-Agent', 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727)' )
+                # create an opener object to grab the info
+                opener = urllib2.urlopen( request )
+                # save cookie so next time we don't have to verify, TODO: find out why this isn't working
+                self.cookie_jar.save( self.BASE_COOKIE_PATH )
+            """
