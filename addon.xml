@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.youtube" name="YouTube Videos" version="2.0.0" provider-name="nuka1195">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <nochangelog>true</nochangelog>
+        <summary>Download and play videos from youtube.</summary>
+        <disclaimer></disclaimer>
+        <description>Find, download and play videos from YouTube. Supports HD videos.</description>
+    </extension>
+</addon>
